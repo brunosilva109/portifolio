@@ -1,0 +1,248 @@
+/* Resetando estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Seção Sobre */
+#about {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Seção Habilidades */
+#skills {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#skills .skill-bar {
+    position: relative;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills .progress-bar {
+    height: 100%;
+    background-color: #3498db; /* Cor padrão (pode ser mudada por habilidade) */
+    width: 0; /* Começa com 0% de largura */
+    border-radius: 10px;
+    transition: width 2s ease; /* Animação suave */
+}
+
+#skills .skill-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Cores específicas para cada habilidade */
+#skills .progress-bar[data-skill="html"] {
+    background-color: #e44d26; /* HTML */
+}
+
+#skills .progress-bar[data-skill="css"] {
+    background-color: #1572b6; /* CSS */
+}
+
+#skills .progress-bar[data-skill="javascript"] {
+    background-color: #f7df1e; /* JavaScript */
+}
+
+#skills .progress-bar[data-skill="react"] {
+    background-color: #61dafb; /* React */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #skills .progress-bar {
+        height: 25px;
+    }
+
+    #skills .skill-percent {
+        font-size: 0.9rem;
+    }
+}
+
+/* Seção Projetos */
+#projects {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#projects .card {
+    margin-bottom: 20px;
+}
+
+/* Seção Contato */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    #skills .progress-bar {
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+}
+/* Seção Experiências Profissionais */
+#experience {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+#experience h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card h4 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.experience-card h6 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #777;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .experience-card {
+        padding: 15px;
+    }
+
+    #experience h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        padding: 12px;
+    }
+}
+
