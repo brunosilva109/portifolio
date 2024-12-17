@@ -38,6 +38,10 @@ header img {
     font-size: 1.2rem;
     margin-top: 20px;
 }
+.Psize{
+    height: 200px;
+    width: 200px;
+}
 
 /* Seção Habilidades */
 #skills {
@@ -109,7 +113,10 @@ header img {
     padding: 50px 0;
     text-align: center;
 }
-
+.size{
+    width: 400px;
+    height: 400px;
+}
 #projects .card {
     margin-bottom: 20px;
 }
